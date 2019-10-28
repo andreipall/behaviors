@@ -53,7 +53,7 @@ async function* walkUserTimeline() {
  * @param cliAPI
  * @return {AsyncIterator<*>}
  */
-export default async function* initFBUserFeedBehaviorIterator(cliAPI) {
+export default async function* initFBUserPostsFeedBehaviorIterator(cliAPI) {
   const state = { videos: 0, posts: 0 };
   for await (const timelineItem of walkUserTimeline()) {
     state.posts++;
