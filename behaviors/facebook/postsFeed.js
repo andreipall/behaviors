@@ -96,14 +96,14 @@ export const postStep = lib.buildCustomPostStepFn(() => {
 });
 
 export const metadata = {
-  name: 'facebookUserFeed',
-  displayName: 'Facebook Page',
+  name: 'facebookPostsFeed',
+  displayName: 'Facebook Posts Page',
   match: {
     regex: /^https?:\/\/(www\.)?facebook\.com\/pg\/[a-z\d]+\/posts\/\?ref=page_internal$/,
   },
   description:
     'Capture all items and comments in the Facebook page and scroll down to load more content where possible.',
-  updated: '2019-08-21T14:52:23-07:00',
+  updated: '2019-10-28T14:52:23-07:00',
 };
 
 export const isBehavior = true;
