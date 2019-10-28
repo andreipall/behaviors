@@ -1,6 +1,6 @@
 import * as lib from '../../lib';
 import * as selectors from './selectors';
-import { maybeViewPostOrImageInTheater } from './shared';
+//import { maybeViewPostOrImageInTheater } from './shared';
 
 let behaviorStyle;
 if (debug) {
@@ -67,7 +67,7 @@ export default async function* initFBUserFeedBehaviorIterator(cliAPI) {
       state.videos++;
       await lib.clickWithDelay(playVideo);
     }
-    await maybeViewPostOrImageInTheater(timelineItem);
+    //await maybeViewPostOrImageInTheater(timelineItem);
     let moreCommentsLoaded = 0;
     // the load more comments/replies element is removed once clicked
     // thus we need only to continually select all of the currently rendered
