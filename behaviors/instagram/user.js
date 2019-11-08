@@ -192,7 +192,7 @@ export default function instagramUserBehavior(cliAPI) {
       });
     },
     handler(row, additionalArgs) {
-      //return lib.traverseChildrenOf(row, handlePost, additionalArgs);
+      return lib.traverseChildrenOf(row, handlePost, additionalArgs);
     },
     setupFailure() {
       // we got nothing at this point, HALP!!!
