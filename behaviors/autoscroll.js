@@ -3,7 +3,7 @@ import * as lib from '../lib';
 // special actions for ensuring that embeds are played
 const specialActions = [
   {
-    rx: /w\.soundcloud\.com/,
+    rx: [/w\.soundcloud\.com/, /twitter\.com/],
     check(url) {
       if (url.href.search(this.rx) >= 0) {
         const autoplay = url.searchParams.get('auto_play');
