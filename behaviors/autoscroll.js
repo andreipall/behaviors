@@ -80,7 +80,7 @@ export default async function* autoScrollBehavior(init) {
       lib.autoFetchFromDoc();
       // ensure we do not go way way to fast in order to allow
       // time for additional content to be loaded
-      await lib.delay(500);
+      await lib.delay(1000);
     }
     lib.autoFetchFromDoc();
     lib.collectOutlinksFromDoc();
