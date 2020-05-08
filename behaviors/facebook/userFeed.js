@@ -9,7 +9,7 @@ if (debug) {
   );
 }
 
-const delayTime = 1500;
+const delayTime = 2500;
 
 let removedAnnoying = lib.maybeRemoveElemById(selectors.PageletGrowthId);
 
