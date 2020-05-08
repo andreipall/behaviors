@@ -8,7 +8,7 @@ if (debug) {
     '.wr-debug-visited {border: 6px solid #3232F1;}'
   );
 }
-const scrollDelay = 1500;
+const scrollDelay = 2500;
 
 async function* walkNewsFeed() {
   let items = lib.xpathSnapShot(selectors.NewsFeedItemXPath);
