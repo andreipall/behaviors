@@ -99,7 +99,7 @@ export const metadata = {
   name: 'facebookReviewsFeed',
   displayName: 'Facebook Reviews Page',
   match: {
-    regex: /^https?:\/\/(www\.)?facebook\.com\/pg\/[a-zA-Z\d-_]+\/reviews\/\?ref=page_internal$/,
+    regex: /^https?:\/\/((www|nl-nl)\.)?facebook\.com\/pg\/[a-zA-Z\d-_]+\/reviews\/\?ref=page_internal$/,
   },
   description:
     'Capture all items and comments in the Facebook page and scroll down to load more content where possible.',
